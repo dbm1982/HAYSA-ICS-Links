@@ -5,6 +5,9 @@ on:
     - cron: '0 6 * * *'  # Daily at 6am EST
   workflow_dispatch:
 
+permissions:
+contents: write
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
